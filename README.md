@@ -1,17 +1,9 @@
 # u11-backend
-
-API List:
-  (1) POST - http://localhost:5000/create_account
-  (2) POST - http://localhost:5000/login
-  (3) POST - http://localhost:5000/new_item
-  (4) GET - http://localhost:5000/get_items
-  (5) PUT - http://localhost:5000/edit_item
-  (6) DELETE - http://localhost:5000/delete_item
+This is backend of U11-shopping-list which is build with NodeJS & Express and use JSON files as database. 
 
 
-
-API Body
-(1) POST - http://localhost:5000/create_account
+## API List
+###### (1) POST - http://localhost:5000/create_account
     body {
             "username": "----",
             "password": "----"
@@ -21,7 +13,7 @@ API Body
 
 
 
-(2) POST - http://localhost:5000/login
+###### (2) POST - http://localhost:5000/login
       body {
               "username": "----",
               "password": "----"
@@ -31,7 +23,7 @@ API Body
 
 
 
-(3) POST - http://localhost:5000/new_item
+###### (3) POST - http://localhost:5000/new_item
     body {
             "userId": -*-*-*-*- ,
             "itemName": "RedBull",
@@ -44,7 +36,7 @@ API Body
  
  
  
-(4) POST - http://localhost:5000/get_items
+###### (4) POST - http://localhost:5000/get_items
     body {
             "userId": -*-*-*-*- ,
          }
@@ -53,7 +45,7 @@ API Body
  
  
  
-(5) PUT - http://localhost:5000/edit_item
+###### (5) PUT - http://localhost:5000/edit_item
     body {
             "userId": -*-*-*-*- ,
             "itemId": -*-*-*-*- ,
@@ -64,7 +56,7 @@ API Body
          }
          
           
-(6) DELETE - http://localhost:5000/delete_item
+###### (6) DELETE - http://localhost:5000/delete_item
     body {
             "userId": -*-*-*-*- ,
             "itemId": -*-*-*-*- ,
