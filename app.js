@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -12,6 +13,7 @@ const new_item = require('./routes/new_item');
 const edit_item = require('./routes/edit_item');
 const delete_item = require('./routes/delete_item');
 
+app.use(cors())
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());

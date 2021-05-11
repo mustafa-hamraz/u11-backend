@@ -4,6 +4,8 @@ const fs = require('fs');
 
 // Handling login requests
 router.post('/', (req, res, next)=>{
+    res.header('Access-Control-Allow-Origin', '*')
+    
     const username = req.body.username;
     const password = req.body.password;
 
@@ -11,7 +13,8 @@ router.post('/', (req, res, next)=>{
     const auth = DB_checkUser(username, password);
 
     if(auth) {
-        res.status(200).json({
+        res.status(200).json(
+            {
             status: '200',
             exist: true,
             userId: auth,
@@ -25,6 +28,7 @@ router.post('/', (req, res, next)=>{
             userId: "",
             username: username,
             password: password
+
         });
     }
 });
