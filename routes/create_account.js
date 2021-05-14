@@ -4,11 +4,13 @@ const fs = require('fs');
 
 // Handling login requests
 router.post('/', (req, res, next)=>{
+    res.header('Access-Control-Allow-Origin', '*')
+
     const username = req.body.username;
     const password = req.body.password;
 
     const newUser = add_user(username, password)
-
+    
     if(newUser === false){
         res.status(200).json({
             userAdded: false,

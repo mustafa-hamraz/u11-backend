@@ -3,7 +3,8 @@ const router = express.Router();
 const fs = require('fs');
 
 router.post('/', (req, res, next)=>{
-    const userId = req.body.userId;
+    res.header('Access-Control-Allow-Origin', '*')
+    const userId = Number(req.body.userId);
     const itemName = req.body.itemName;
     const amout = req.body.amout;
     const measure = req.body.measure;

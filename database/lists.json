@@ -1,18 +1,43 @@
 [
   {
-    "userId": 1620578647435,
-    "list": [
-      {
-        "itemId": 3241157374372,
-        "itemName": "RedBull",
-        "amout": 1,
-        "measure": "st",
-        "checked": true
-      }
-    ]
+    "userId": 1620744062680,
+    "list": []
   },
   {
-    "userId": 1620596658011,
+    "userId": 1620904552823,
     "list": []
+  },
+  {
+    "userId": 1620951505266,
+    "list": [
+      {
+        "itemId": 3241903020447,
+        "itemName": "Banana",
+        "amout": 0,
+        "measure": "",
+        "checked": false
+      },
+      {
+        "itemId": 3241903024457,
+        "itemName": "kaffe",
+        "amout": 0,
+        "measure": "",
+        "checked": false
+      },
+      {
+        "itemId": 3241903027536,
+        "itemName": "te",
+        "amout": 0,
+        "measure": "",
+        "checked": false
+      },
+      {
+        "itemId": 3241903032037,
+        "itemName": "kyckling",
+        "amout": 0,
+        "measure": "",
+        "checked": false
+      }
+    ]
   }
 ]
