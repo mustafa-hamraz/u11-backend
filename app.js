@@ -4,7 +4,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const fs = require('fs')
-
+const path = require('path');
 
 const login = require('./routes/login');
 const create_account = require('./routes/create_account');
@@ -17,6 +17,11 @@ app.use(cors())
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+});
 
 //Routes that handles requests
 app.use('/login', login);
